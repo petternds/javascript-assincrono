@@ -1,9 +1,9 @@
 const uploadBtn = document.getElementById("upload-btn");
-const inputUpload = document.getElementById("image-upload");
+const inputUpload = document.getElementById("image-upload")
 
 uploadBtn.addEventListener("click", () => {
     inputUpload.click();
-});
+})
 
 function lerConteudoDoArquivo(arquivo) {
     return new Promise((resolve, reject) => {
@@ -11,7 +11,7 @@ function lerConteudoDoArquivo(arquivo) {
         leitor.onload = () => {
             resolve({
                 url: leitor.result,
-                nome: arquivo.nome
+                nome: arquivo.name
             })
         }
 
@@ -35,7 +35,7 @@ inputUpload.addEventListener("change", async (evento) => {
             imagemPrincipal.src = conteudoDoArquivo.url;
             nomeDaImagem.textContent = conteudoDoArquivo.nome;
         } catch (erro) {
-            console.error("Erro na leitura do arquivo");
+            console.error("Erro na leitura do arquivo")
         }
     }
 })
