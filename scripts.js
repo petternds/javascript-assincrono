@@ -62,3 +62,13 @@ listaTags.addEventListener("click", (evento) => {
         listaTags.removeChild(tagQueQueremosRemover);
     };
 });
+
+const tagsDisponiveis = ["Front-end", "Programação", "Data Scoence", "Full-stack", "HMTL", "CSS", "JavaScript"];
+
+async function verificaTagasDisponiveis(tagTexto) {
+    return new Promise((resolve) => {
+        setTimeOut(() => {
+            resolve(tagsDisponiveis.includes(tagTexto));
+        }, 1000);
+    });
+};
