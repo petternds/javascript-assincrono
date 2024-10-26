@@ -161,16 +161,16 @@ textarea {
   margin-left: 8px;
 }
 
-.bota-publicar {
+.botao-publicar {
   background-color: var(--primary-color);
   color: var(--background-color);
   border: none;
   position: relative;
 }
 
-.bota-publicar::after {
+.botao-publicar::after {
   content: "";
-  background-image: url("./img/arrow_forward2.svg");
+  background-image: url("../img/arrow_forward2.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 15px;
@@ -229,8 +229,8 @@ textarea {
 }
 
 .container-imagem-nome {
-    display: flex;
-    gap: 8px;
-    color: var(--secondary-color);
-    font-size: 15px;
+  display: flex;
+  gap: 8px;
+  color: var(--secondary-color);
+  font-size: 15px;
 }
